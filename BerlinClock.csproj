@@ -50,14 +50,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BDD\BerlinClockFeatureSteps.cs" />
+    <Compile Include="Classes\ConcereteTimeFormatCreator.cs" />
+    <Compile Include="MainClass.cs" />
+    <Compile Include="Model\Time.cs" />
+    <Compile Include="Classes\TimeFormatCreator.cs" />
+    <Compile Include="Interface\ITimeFormat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BDD\BerlinClockFeatureSteps.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BerlinClockFeatureSteps.feature</DependentUpon>
     </Compile>
-    <Compile Include="Classes\ITimeConverter.cs" />
-    <Compile Include="Classes\TimeConverter.cs" />
+    <Compile Include="TimeFormat\BerlinClockFormat.cs" />
+    <Compile Include="TimeFormat\DefaultFormat.cs" />
+    <Compile Include="TimeFormat\SimpleFormat.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
